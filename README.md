@@ -1,1 +1,8 @@
-# multithreading_message_passing
+# Multithreading & Message Passing
+A simulation model is designed and implemented using a combination of Message Passing Interface (MPI) and POSIX/OpenMP in C Programming Language
+
+The deployed wireless sensor network comprises m × n nodes in a cartesian grid, and a base station. However, the values of m and n vary as specified by the user during program runtime. Each node in this cartesian grid simulates the behaviour of the seafloor seismic sensor, and each node communicates with its immediate adjacent nodes. These nodes can exchange data through unicast and broadcast modes of communications. All nodes in the WSN can independently exchange data with the base-station. Base-station for this WSN is an additional computer node that is entrusted with the task of gathering data from all sensor nodes in the WSN. All communications among nodes, and between the nodes and the base station are achieved using Message Passing Interface (MPI). In essence, each sensor node and base station can be represented as a MPI process.
+
+In addition, a balloon floating in the Earth’s ionosphere observes the same Cartesian grid layout where the seafloor seismic sensors are currently positioned. This balloon uses a barometer to measure seismic readings, as part of a new method being researched to detect earthquakes using aerial seismology. The base station compares the received data from the seafloor seismic sensors and seismic readings from the balloon. This comparison is done to ascertain if there is a conclusive or an inconclusive match between the information sent by the seafloor seismic sensors and the balloon.
+
+
